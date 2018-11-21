@@ -6,12 +6,15 @@
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	lg = log --pretty=format:'%C(yellow)%h %Cblue%>(12)%ai %Cgreen%<(7)%aN%Cred%d %Creset%s'
 
 	# View the current working tree status using the short format
 	s = status -s
 
 	st = status
 	ci = commit
+	co = checkout
+	br = branch
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -118,7 +121,7 @@
 
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
+	# ui = auto
 
 [commit]
 
@@ -138,7 +141,7 @@
 [help]
 
 	# Automatically correct and execute mistyped commands
-	autocorrect = 1
+	# autocorrect = 1
 
 [merge]
 
