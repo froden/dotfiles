@@ -150,7 +150,11 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
+alias path="echo -e ${PATH//:/\\n}"
 
 # Project specific DIFFIA
-alias diffia='cd ~/dev/diffia'
+alias diffia="cd ~/dev/diffia"
+
+#Project specific Bring
+alias gr="./gradlew"
+alias bring="cd ~/dev/bring"

@@ -176,3 +176,5 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[diff "sopsdiffer"]
+	textconv = sops -d
