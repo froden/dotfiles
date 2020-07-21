@@ -15,6 +15,9 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
 alias git="hub"
+alias k="kubectl"
+# only for bash
+# complete -o default -F __start_kubectl k
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -151,9 +154,6 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path="echo -e ${PATH//:/\\n}"
-
-# Project specific DIFFIA
-alias diffia="cd ~/dev/diffia"
 
 #Project specific Bring
 alias gr="./gradlew"
