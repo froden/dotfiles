@@ -25,3 +25,7 @@ export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 
 # For gnupg to work
 export GPG_TTY=$TTY
+
+
+# completions
+source <(kubectl completion zsh)

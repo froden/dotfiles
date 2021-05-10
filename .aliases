@@ -14,7 +14,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
-alias git="hub"
+#alias git="hub"
 alias k="kubectl"
 # only for bash
 # complete -o default -F __start_kubectl k
