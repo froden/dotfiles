@@ -31,10 +31,7 @@ export MANPAGER='less -X';
 
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
-export GPG_TTY=$(tty);
-
-# export JAVA_HOME="$(/usr/libexec/java_home -v 10.0.2)";
-# export JAVA_HOME="$(/usr/libexec/java_home -v 1.8.0_181)";
+export GPG_TTY=$TTY
 
 # Place GNU getopts first on path
 export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"

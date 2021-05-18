@@ -5,12 +5,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # enable autocomplete
 autoload -Uz compinit && compinit
 
 source .aliases
+source .exports
 bindkey -e
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -22,10 +23,6 @@ export SDKMAN_DIR="/Users/frode/.sdkman"
 
 # Path
 export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
-
-# For gnupg to work
-export GPG_TTY=$TTY
-
 
 # completions
 source <(kubectl completion zsh)
